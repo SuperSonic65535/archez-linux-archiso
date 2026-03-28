@@ -1,0 +1,6 @@
+[Daemon]
+LockGrace=0
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=file:///usr/share/wallpapers/default-wallpaper.png
+PreviewImage=file:///usr/share/wallpapers/default-wallpaper.png

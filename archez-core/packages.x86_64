@@ -1,0 +1,34 @@
+####  [ DO NOT EDIT THIS SECTION ]  ####
+pacman
+bash
+grub
+iptables-nft
+mkinitcpio
+mkinitcpio-archiso
+syslinux
+archez-core
+####  [ END OF SECTION ]  ####
+
+####  [ SYSTEM COMPONENTS ]  ####
+## Linux kernel and headers (ESSENTIAL)
+linux-zen
+linux-zen-headers
+
+## Installer
+archez-installer
+
+## Basic wireless and wired networking support
+networkmanager
+
+## Extra software repositories
+chaotic-keyring
+chaotic-mirrorlist
+
+## Not strictly necessary, but highly recommended for completeness and security
+amd-ucode
+intel-ucode
+os-prober
+terminus-font
+
+## Misc
+nano

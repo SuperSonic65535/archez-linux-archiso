@@ -1,0 +1,16 @@
+## IceWM
+icewm
+
+## Xorg
+xorg-server
+xorg-xinit
+
+## Display manager
+lightdm-gtk-greeter
+
+#### EXTRA SOFTWARE AND PACKAGES ####
+## System tools
+dotfiles-installer
+gparted
+
+#### User specified extra software - add your packages below ####

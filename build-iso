@@ -1,0 +1,80 @@
+#!/bin/sh
+ISO_OUT_DIR="/home/$(whoami)/Documents/os-iso/archez/daily-build"
+DELETE_OLD=y
+SKIP_CURRENT=y
+ARCH="x86_64"
+
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+ARCHISO_PROFILE="$1"
+[ -z "$ARCHISO_PROFILE" ] && ARCHISO_PROFILE=archez-kde-gaming
+[ ! -d "$SCRIPT_DIR/$ARCHISO_PROFILE" ] && echo "[ERROR] ArchISO preset \"$ARCHISO_PROFILE\" not found in $SCRIPT_DIR" && exit
+MEM_MB_SIZE=$(free -m | grep "Mem:" | xargs | cut -d ' ' -f 2)
+if [ $MEM_MB_SIZE -ge 20480 ]; then
+        ARCHISO_WORK_DIR="/tmp/archiso-tmp/work"
+else ARCHISO_WORK_DIR="$SCRIPT_DIR/work"; fi
+
+cd "$SCRIPT_DIR"
+sudo rm -rf out
+
+case $SKIP_CURRENT in y|Y|yes|Yes|YES|1|true|True|TRUE)
+if [ -f "$ISO_OUT_DIR/$ARCHISO_PROFILE-$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)-$ARCH.iso" ]; then
+echo "Latest ISO already built ($(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d))"; echo "Skipping build..."
+exit; fi; esac
+
+## Generated with Google Gemini 3 Pro
+ResolveDepends() {
+    local current_dir="$1"
+    local depends_folder="$current_dir/depends"
+    # --- STEP 1: RECURSION (Dive Deeper) ---
+    # Check if a 'depends' folder exists
+    if [ -d "$depends_folder" ]; then
+        # Loop through every item inside 'depends'
+        for subdir in "$depends_folder"/*; do
+            # Ensure it is a directory before traversing
+            if [ -d "$subdir" ]; then
+                ResolveDepends "$subdir"
+            fi
+        done
+    fi
+    # --- STEP 2: ACTION (Copy Files) ---
+    # This part runs ONLY after the recursion above has finished
+    # for the current branch (Post-Order).
+    # Check if there are actually files to copy to avoid errors
+    if ls "$current_dir" 1> /dev/null 2>&1; then
+        echo "Copying files from: $current_dir"
+        for File in $(ls -w 1 -I depends -I bootstrap_packages.x86_64 -I packages.x86_64 $current_dir); do
+			echo "$File"
+			cp -r "$current_dir"/"$File" /tmp/archiso-tmp/"$ARCHISO_PROFILE"/
+			(cat "$current_dir"/bootstrap_packages.x86_64 >> /tmp/archiso-tmp/"$ARCHISO_PROFILE"/bootstrap_packages.x86_64) &> /dev/null
+			(cat "$current_dir"/packages.x86_64 >> /tmp/archiso-tmp/"$ARCHISO_PROFILE"/packages.x86_64) &> /dev/null
+        done
+        #cp -r "$current_dir"/* /tmp/archiso-tmp/"$ARCHISO_PROFILE"/
+    fi
+}
+
+## Create archiso profile
+rm -rf /tmp/archiso-tmp/"$ARCHISO_PROFILE"
+mkdir -p /tmp/archiso-tmp/"$ARCHISO_PROFILE"
+ResolveDepends "$SCRIPT_DIR/$ARCHISO_PROFILE"
+
+echo "BUILD ISO: $(date)"
+sudo mkarchiso -v -w "$ARCHISO_WORK_DIR" "/tmp/archiso-tmp/$ARCHISO_PROFILE" || exit 1
+
+sudo chown -R $(whoami):$(whoami) out; cd out; mkdir -p "$ISO_OUT_DIR"
+
+case $DELETE_OLD in
+        y|Y|yes|Yes|YES|1|true|True|TRUE)
+                cd "$ISO_OUT_DIR"
+                ISO_FILES=$(ls -w1 | grep "$ARCHISO_PROFILE-" | grep "\-$ARCH.iso" | xargs)
+                if [ ! -z "$ISO_FILES" ]; then
+                        for ISO_FILE in $ISO_FILES; do
+                                sudo rm -f "$ISO_FILE"
+                        done
+                fi;;
+esac
+
+cd "$SCRIPT_DIR/out"; mv *.iso "$ISO_OUT_DIR"
+cd "$SCRIPT_DIR"; rmdir out; sudo rm -rf "$ARCHISO_WORK_DIR"
+
+echo "ISO BUILT: $(date)"; echo "Writing remaining data to disk..."; sync;
+echo "Finished writing remaining data."

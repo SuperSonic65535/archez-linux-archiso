@@ -1,0 +1,8 @@
+[DoNotDisturb]
+WhenScreensMirrored=false
+
+[Notifications]
+LowPriorityHistory=true
+
+[Services][powerdevil]
+ShowPopupsInDndMode=true

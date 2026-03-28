@@ -1,0 +1,67 @@
+####  KDE PLASMA DESKTOP AND APPLICATIONS  ####
+## KDE Plasma core packages and configs (uncomment all if installing KDE Plasma)
+bundle-kde
+
+## App store (recommended)
+pamac-plasma
+
+## KDE Plasma extra functionality (recommended)
+dolphin-plugins
+koi-git
+#kwin-effects-forceblur
+packagekit-qt6
+plasma-vault
+plasma-welcome
+
+## Useful KDE applications
+filelight
+isoimagewriter
+kcharselect
+kcolorchooser
+kfind
+kget
+khelpcenter
+kolourpaint
+krename
+kruler
+ksystemlog
+okular
+skanpage
+
+## Remote desktop client
+krdc
+freerdp
+libvncserver
+
+## Remote desktop server
+krfb
+
+## Themes
+fruit-cursors
+klassy-git
+klassy-qt5-git
+plasma-colors-midnight
+plymouth-theme-breeze
+
+####  [ EXTRA SOFTWARE AND PACKAGES ]  ####
+## Support for Windows games and applications
+bundle-wine
+
+## Internet
+firefox-dark-reader
+firefox-i18n-en-gb
+firefox-ublock-origin
+qbittorrent
+ocs-url
+
+## Productivity
+onlyoffice-bin
+
+## Multimedia
+vlc
+vlc-plugins-all
+
+## System tools
+gparted
+
+#### User specified extra software - add your packages below ####

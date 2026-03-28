@@ -1,0 +1,51 @@
+## Wireless and wired networking support and service discovery
+bundle-networking
+
+## Mobile data support for devices with a built-in 3G/4G/5G modem
+## (note that this does not include support for voice calls and SMS)
+#bundle-modemmanager
+
+## Bluetooth support via BlueZ
+bundle-bluetooth
+
+## Printing/scanning support and drivers
+bundle-printing
+
+## Support for extra filesystems (NTFS, BTRFS, LVM/RAID etc.) and encryption
+bundle-filesystems
+
+## Useful command-line utilities from other distros (ddrescue, gptfdisk, man-pages, usbutils etc.)
+bundle-cli-utils
+
+## Extra media codecs for music and video files (not really needed)
+#bundle-media-codecs
+
+## GPU drivers
+bundle-amd-gpu
+bundle-intel-gpu
+bundle-nvidia-free
+#bundle-nvidia-pro
+#bundle-nvidia-pro-340xx
+#bundle-nvidia-pro-390xx
+#bundle-nvidia-pro-470xx
+#bundle-nvidia-pro-525xx
+
+## Pipewire sound server
+lib32-pipewire-jack
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
+pipewire-roc
+pipewire-v4l2
+pipewire-zeroconf
+wireplumber
+
+## Compilers and tools
+base-devel
+git
+yay
+
+## System tools
+fastfetch
+testdisk
+ufw

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Categories=GNOME;GTK;System;PackageManager;Settings;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;
+Comment=Notify when updates are available
+Exec=/usr/lib/pamac-plasma/update-notify.sh
+Icon=system-software-install
+Keywords[en_GB]=Updates;Upgrade;Sources;Repositories;Preferences;Install;Uninstall;Program;Software;App;Store;
+Name=Update notifier
+NoDisplay=false
+OnlyShowIn=KDE
+Terminal=false
+Type=Application
+X-KDE-StartupNotify=false

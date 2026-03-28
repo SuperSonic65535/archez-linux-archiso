@@ -1,0 +1,20 @@
+####  KDE PLASMA DESKTOP AND APPLICATIONS  ####
+## KDE Plasma core packages and configs (uncomment all if installing KDE Plasma)
+bundle-kde-full
+
+## Extra KDE applications
+kalarm
+kclock
+kdeconnect
+#kgpg
+kmail
+kontact
+krecorder
+okteta
+yakuake
+
+####  [ EXTRA SOFTWARE AND PACKAGES ]  ####
+## Productivity
+teams-for-linux
+
+#### User specified extra software - add your packages below ####

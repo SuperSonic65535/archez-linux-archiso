@@ -1,0 +1,11 @@
+[Desktop Entry]
+DefaultProfile=User Profile.profile
+
+[General]
+ConfigVersion=1
+
+[MainWindow]
+MenuBar=Enabled
+
+[UiSettings]
+ColorScheme=

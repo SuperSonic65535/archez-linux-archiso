@@ -1,0 +1,13 @@
+MODULES=()
+BINARIES=()
+FILES=()
+HOOKS=(consolefont base udev consolefont microcode modconf keyboard autodetect kms plymouth keymap block filesystems fsck)
+#COMPRESSION="zstd"
+#COMPRESSION="gzip"
+#COMPRESSION="bzip2"
+#COMPRESSION="lzma"
+#COMPRESSION="xz"
+#COMPRESSION="lzop"
+#COMPRESSION="lz4"
+#COMPRESSION_OPTIONS=()
+MODULES_DECOMPRESS="no"

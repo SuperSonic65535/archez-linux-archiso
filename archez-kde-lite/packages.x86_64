@@ -1,0 +1,21 @@
+####  KDE PLASMA DESKTOP AND APPLICATIONS  ####
+## KDE Plasma core packages and configs (uncomment all if installing KDE Plasma)
+bundle-kde-lite
+phonon-qt6-gstreamer-git
+qt6-multimedia-gstreamer
+
+## Essential KDE applications (uncomment all if installing KDE Plasma)
+ark
+dolphin
+gwenview
+kate
+kcalc
+konsole
+kwalletmanager
+plasma-systemmonitor
+spectacle
+
+## System tools
+dotfiles-installer
+
+#### User specified extra software - add your packages below ####

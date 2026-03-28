@@ -1,0 +1,66 @@
+#### XFCE DESKTOP ENVIRONMENT AND APPLICATIONS ####
+## XFCE core packages and configs (uncomment all if installing XFCE)
+bundle-xfce
+
+## Essential XFCE applications (uncomment all if installing XFCE)
+engrampa
+galculator
+mousepad
+ristretto
+xfce4-screenshooter
+xfce4-taskmanager
+xfce4-terminal
+
+## XFCE extra functionality (recommended)
+xfce4-clipman-plugin
+xfce4-genmon-plugin
+xfce4-mailwatch-plugin
+xfce4-mount-plugin
+xfce4-mpc-plugin
+xfce4-notes-plugin
+xfce4-places-plugin
+xfce4-sensors-plugin
+xfce4-verve-plugin
+xfce4-weather-plugin
+xfce4-whiskermenu-plugin
+xfce4-xkb-plugin
+
+## Useful XFCE applications
+lightdm-gtk-greeter-settings
+lightdm-settings
+
+## Extra XFCE applications
+
+## Themes
+
+
+
+#### EXTRA SOFTWARE AND PACKAGES ####
+## Support for Windows games and applications
+bundle-wine
+
+## Internet
+firefox-dark-reader
+firefox-i18n-en-gb
+firefox-ublock-origin
+qbittorrent
+ocs-url
+
+## Productivity
+onlyoffice-bin
+
+## Multimedia
+obs-studio
+vlc
+vlc-plugins-all
+
+## Gaming
+lib32-mangohud
+lutris
+mangohud
+
+## System tools
+dotfiles-installer
+gparted
+
+#### User specified extra software - add your packages below ####

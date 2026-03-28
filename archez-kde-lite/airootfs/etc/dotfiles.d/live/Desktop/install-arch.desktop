@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Install Arch Linux
+Comment=Install Arch Linux on your computer
+Categories=System;
+Exec=/usr/lib/archez-installer/archez-installer
+Terminal=true
+TerminalOptions=
+Type=Application
+Icon=system-software-install
+StartupNotify=true
