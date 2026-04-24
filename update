@@ -8,6 +8,6 @@ RandomMsg() {
 		4) echo "General security fixes for improved user experience";;
 	esac
 }
-git add . && \
-git commit -m "$(RandomMsg)" && \
+git add .
+git commit -m "$(RandomMsg)"
 git push -u origin main
