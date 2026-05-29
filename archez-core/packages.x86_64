@@ -1,12 +1,12 @@
 ####  [ DO NOT EDIT THIS SECTION ]  ####
 pacman
+archez-core
 bash
 grub
-iptables-nft
+iptables
 mkinitcpio
 mkinitcpio-archiso
 syslinux
-archez-core
 ####  [ END OF SECTION ]  ####
 
 ####  [ SYSTEM COMPONENTS ]  ####
@@ -29,6 +29,7 @@ amd-ucode
 intel-ucode
 os-prober
 terminus-font
+zram-generator
 
 ## Misc
 nano

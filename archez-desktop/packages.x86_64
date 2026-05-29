@@ -3,7 +3,7 @@ bundle-networking
 
 ## Mobile data support for devices with a built-in 3G/4G/5G modem
 ## (note that this does not include support for voice calls and SMS)
-#bundle-modemmanager
+bundle-modemmanager
 
 ## Bluetooth support via BlueZ
 bundle-bluetooth

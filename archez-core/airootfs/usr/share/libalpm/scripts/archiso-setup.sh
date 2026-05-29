@@ -9,7 +9,8 @@ gpasswd -a live wheel; gpasswd -a live autologin
 passwd -d root
 
 ## Enable important system services
-systemctl enable fstrim.timer systemd-timesyncd NetworkManager
+systemctl enable NetworkManager systemd-timesyncd
+[ -f /usr/lib/systemd/system/ModemManager.service ] && systemctl enable ModemManager
 [ -f /usr/lib/systemd/system/ufw.service ] && systemctl enable ufw
 
 ## Uncomment mirrors in pacman mirrorlist
