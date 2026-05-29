@@ -7,10 +7,8 @@ pamac-plasma
 
 ## KDE Plasma extra functionality (recommended)
 dolphin-plugins
-koi-git
-#kwin-effects-forceblur
+kwin-effects-better-blur-dx
 packagekit-qt6
-plasma-vault
 plasma-welcome
 
 ## Useful KDE applications
@@ -26,6 +24,7 @@ krename
 kruler
 ksystemlog
 okular
+plasma-vault
 skanpage
 
 ## Remote desktop client

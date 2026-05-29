@@ -2,7 +2,7 @@
 ## KDE Plasma core packages and configs (uncomment all if installing KDE Plasma)
 bundle-kde-lite
 phonon-qt6-gstreamer-git
-qt6-multimedia-gstreamer
+qt6-multimedia-ffmpeg
 
 ## Essential KDE applications (uncomment all if installing KDE Plasma)
 ark
