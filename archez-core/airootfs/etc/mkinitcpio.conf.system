@@ -1,7 +1,7 @@
 MODULES=()
 BINARIES=()
 FILES=()
-HOOKS=(consolefont base udev consolefont microcode modconf keyboard autodetect kms plymouth keymap block filesystems fsck)
+HOOKS=(systemd sd-vconsole autodetect microcode modconf kms keyboard block filesystems fsck)
 #COMPRESSION="zstd"
 #COMPRESSION="gzip"
 #COMPRESSION="bzip2"
