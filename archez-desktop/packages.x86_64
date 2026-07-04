@@ -12,13 +12,20 @@ bundle-bluetooth
 bundle-printing
 
 ## Support for extra filesystems (NTFS, BTRFS, LVM/RAID etc.) and encryption
-bundle-filesystems
+btrfs-progs
+cryptsetup
+exfatprogs
+fscrypt
+lvm2
+mdadm
+ntfs-3g
+
+## Support for .rar and .7r archive files
+p7zip
+unrar
 
 ## Useful command-line utilities from other distros (ddrescue, gptfdisk, man-pages, usbutils etc.)
 bundle-cli-utils
-
-## Extra media codecs for music and video files (not really needed)
-#bundle-media-codecs
 
 ## GPU drivers
 bundle-amd-gpu
@@ -40,12 +47,17 @@ pipewire-v4l2
 pipewire-zeroconf
 wireplumber
 
+## Udev rules for gamepads and android devices
+android-udev
+game-devices-udev
+
 ## Compilers and tools
 base-devel
 git
 yay
 
+## Firewall
+firewalld
+
 ## System tools
 fastfetch
-testdisk
-ufw

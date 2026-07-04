@@ -11,7 +11,8 @@ passwd -d root
 ## Enable important system services
 systemctl enable NetworkManager systemd-timesyncd
 [ -f /usr/lib/systemd/system/ModemManager.service ] && systemctl enable ModemManager
-[ -f /usr/lib/systemd/system/ufw.service ] && systemctl enable ufw
+if [ -f /usr/lib/systemd/system/firewalld.service ]; then systemctl enable firewalld
+elif [ -f /usr/lib/systemd/system/ufw.service ]; then systemctl enable ufw; fi
 
 ## Uncomment mirrors in pacman mirrorlist
 sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist

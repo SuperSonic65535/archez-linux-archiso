@@ -7,7 +7,6 @@ pamac-plasma
 
 ## KDE Plasma extra functionality (recommended)
 dolphin-plugins
-kwin-effects-better-blur-dx
 packagekit-qt6
 plasma-welcome
 
@@ -26,6 +25,7 @@ ksystemlog
 okular
 plasma-vault
 skanpage
+tesseract-data-eng
 
 ## Remote desktop client
 krdc

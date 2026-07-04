@@ -6,7 +6,7 @@ ARCH="x86_64"
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 ARCHISO_PROFILE="$1"
-[ -z "$ARCHISO_PROFILE" ] && ARCHISO_PROFILE=archez-kde-gaming
+[ -z "$ARCHISO_PROFILE" ] && echo "[ERROR] Please specify archiso preset to use" && exit 1
 [ ! -d "$SCRIPT_DIR/$ARCHISO_PROFILE" ] && echo "[ERROR] ArchISO preset \"$ARCHISO_PROFILE\" not found in $SCRIPT_DIR" && exit
 MEM_MB_SIZE=$(free -m | grep "Mem:" | xargs | cut -d ' ' -f 2)
 if [ $MEM_MB_SIZE -ge 20480 ]; then

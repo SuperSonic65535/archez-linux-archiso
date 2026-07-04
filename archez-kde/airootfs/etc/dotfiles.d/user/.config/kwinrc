@@ -4,29 +4,12 @@ Id_2=1c3b12f1-2a6e-4ee2-9c9f-7e228759a2da
 Number=2
 Rows=2
 
-[Effect-blurplus]
-BlurDecorations=true
-BlurDocks=true
-BlurMatching=false
-BlurNonMatching=true
-BlurStrength=8
-BottomCornerRadius=10
-DockCornerRadius=10
-MenuCornerRadius=10
-NoiseStrength=0
-TopCornerRadius=10
-TransparentBlur=false
-
 [Effect-overview]
 GridTouchBorderActivate=4
 TouchBorderActivate=6
 
-[NightColor]
-Active=true
-
 [Plugins]
-blurEnabled=false
-forceblurEnabled=true
+blurEnabled=true
 
 [Tiling]
 padding=4
@@ -44,9 +27,7 @@ Top=KRunner
 [Wayland]
 InputMethod[$e]=/usr/share/applications/org.kde.plasma.keyboard.desktop
 
-[Xwayland]
-Scale=1
-
 [org.kde.kdecoration2]
+ButtonsOnLeft=ME
 library=org.kde.klassy
 theme=Klassy
