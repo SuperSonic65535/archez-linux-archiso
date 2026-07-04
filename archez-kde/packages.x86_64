@@ -3,7 +3,8 @@
 bundle-kde
 
 ## App store (recommended)
-pamac-plasma
+pamac-all
+pamac-tray-plasma-git
 
 ## KDE Plasma extra functionality (recommended)
 dolphin-plugins
