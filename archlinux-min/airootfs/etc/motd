@@ -1,0 +1,8 @@
+#### [ BASIC COMMANDS ] ####
+Connect to internet: nmtui
+Edit text file: nano <FILE>
+
+#### [ ADVANCED TOOLS ] ####
+Run as administrator: sudo <COMMAND>
+List disk partitions: lsblk
+Disk partition tool: cfdisk

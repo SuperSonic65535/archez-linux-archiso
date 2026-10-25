@@ -1,0 +1,12 @@
+# remove from airootfs!
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = systemd
+
+[Action]
+Description = Finish setting up ArchISO environment...
+When = PostTransaction
+Depends = systemd
+Exec = /usr/share/libalpm/scripts/archiso-setup.sh
