@@ -1,0 +1,660 @@
+Copying files from: /home/am/Projects/archez-linux-archiso/archlinux-min
+README.txt
+airootfs
+bootstrap_packages
+grub
+pacman.conf
+profiledef.sh
+BUILD ISO: Fri  6 Nov 16:28:57 GMT 2026
+[mkarchiso-improved] INFO: Validating options...
+[mkarchiso-improved] INFO: Done!
+[mkarchiso-improved] INFO: mkarchiso-improved configuration settings
+[mkarchiso-improved] INFO:              Architecture:   x86_64
+[mkarchiso-improved] INFO:         Working directory:   /tmp/archiso-tmp/work
+[mkarchiso-improved] INFO:    Installation directory:   arch
+[mkarchiso-improved] INFO:                Build date:   2026-11-06T16:28+0000
+[mkarchiso-improved] INFO:          Output directory:   /home/am/Projects/archez-linux-archiso/out
+[mkarchiso-improved] INFO:        Current build mode:   iso
+[mkarchiso-improved] INFO:               Build modes:   iso
+[mkarchiso-improved] INFO:                   GPG key:   None
+[mkarchiso-improved] INFO:                GPG signer:   None
+[mkarchiso-improved] INFO: Code signing certificates:   None
+[mkarchiso-improved] INFO:                   Profile:   /tmp/archiso-tmp/archlinux-min
+[mkarchiso-improved] INFO: Pacman configuration file:   /tmp/archiso-tmp/archlinux-min/pacman.conf
+[mkarchiso-improved] INFO:           Image file name:   archlinux-min-2026.11.06-x86_64.iso
+[mkarchiso-improved] INFO:          ISO volume label:   ARCH_202611
+[mkarchiso-improved] INFO:             ISO publisher:   Arch Linux <https://archlinux.org>
+[mkarchiso-improved] INFO:           ISO application:   Arch Linux minimal
+[mkarchiso-improved] INFO:                Boot modes:   bios.grub uefi.grub
+[mkarchiso-improved] INFO:             Packages File:   /tmp/archiso-tmp/archlinux-min/packages.x86_64
+[mkarchiso-improved] INFO:                  Packages:   pacman linux-zen linux-firmware-amd linux-firmware-atheros linux-firmware-broadcom linux-firmware-intel linux-firmware-mediatek linux-firmware-realtek amd-ucode intel-ucode networkmanager wireless-regdb base dosfstools efibootmgr grub mkinitcpio mkinitcpio-archiso archez-installer sudo pacman linux-zen linux-firmware-amd linux-firmware-atheros linux-firmware-broadcom linux-firmware-intel linux-firmware-mediatek linux-firmware-realtek amd-ucode intel-ucode networkmanager wireless-regdb base dosfstools efibootmgr grub mkinitcpio mkinitcpio-archiso archez-installer sudo pacman linux-zen linux-firmware-amd linux-firmware-atheros linux-firmware-broadcom linux-firmware-intel linux-firmware-mediatek linux-firmware-realtek amd-ucode intel-ucode networkmanager wireless-regdb base dosfstools efibootmgr grub mkinitcpio mkinitcpio-archiso archez-installer sudo pacman linux-zen linux-firmware-amd linux-firmware-atheros linux-firmware-broadcom linux-firmware-intel linux-firmware-mediatek linux-firmware-realtek amd-ucode intel-ucode networkmanager wireless-regdb base dosfstools efibootmgr grub mkinitcpio mkinitcpio-archiso archez-installer sudo pacman linux-zen linux-firmware-amd linux-firmware-atheros linux-firmware-broadcom linux-firmware-intel linux-firmware-mediatek linux-firmware-realtek amd-ucode intel-ucode networkmanager wireless-regdb base dosfstools efibootmgr grub mkinitcpio mkinitcpio-archiso archez-installer sudo pacman linux-zen linux-firmware-amd linux-firmware-atheros linux-firmware-broadcom linux-firmware-intel linux-firmware-mediatek linux-firmware-realtek amd-ucode intel-ucode networkmanager wireless-regdb base dosfstools efibootmgr grub mkinitcpio mkinitcpio-archiso archez-installer sudo
+[mkarchiso-improved] INFO: Copying custom pacman.conf to work directory...
+[mkarchiso-improved] INFO: Using pacman CacheDir: /var/cache/pacman/pkg/ 
+[mkarchiso-improved] INFO: Copying custom airootfs files...
+[mkarchiso-improved] INFO: Done!
+[mkarchiso-improved] INFO: Installing packages to '/tmp/archiso-tmp/work/x86_64/airootfs/'...
+==> Creating install root at /tmp/archiso-tmp/work/x86_64/airootfs
+==> Installing packages to /tmp/archiso-tmp/work/x86_64/airootfs
+:: Synchronizing package databases...
+ core                                                             128.6 KiB   857 KiB/s 00:00 [#######################################################] 100%
+ extra                                                              8.6 MiB  4.17 MiB/s 00:02 [#######################################################] 100%
+ archez                                                             8.6 KiB  16.2 KiB/s 00:01 [#######################################################] 100%
+resolving dependencies...
+:: There are 2 providers available for libxtables.so=12-64:
+:: Repository core
+   1) iptables  2) iptables-legacy
+
+Enter a number (default=1): 
+looking for conflicting packages...
+
+Packages (181) acl-2.4.0-1  arch-install-scripts-32-1  archlinux-keyring-20260909-1  attr-2.6.0-1  audit-4.2.1-1  bash-5.3.20-1  binutils-2.47-4
+               brotli-1.2.1-1  bzip2-1.0.8-6  ca-certificates-20240618-1  ca-certificates-mozilla-3.133-1  ca-certificates-utils-20240618-1
+               coreutils-9.12-2  cryptsetup-2.8.8-1  curl-8.23.0-1  dbus-1.16.2-2  dbus-broker-37-3  dbus-broker-units-37-3  dbus-units-37-3
+               device-mapper-2.03.44-1  dialog-1:1.3_20260721-1  diffutils-3.12-2  duktape-2.7.0-7  e2fsprogs-1.47.4-1  efivar-39-2  expat-2.10.0-1
+               file-5.48-1  filesystem-2025.10.12-1  findutils-4.11.0-1  gawk-5.4.1-1  gcc-libs-16.2.1+r23+gd564253eb6c8-1  gdbm-1.26-2  gettext-1.0-2
+               glib2-2.90.1-1  glibc-2.44+r50+g1848099f063e-1  gmp-6.3.0-3  gnulib-l10n-20241231-1  gnupg-2.4.9-4  gnutls-3.8.13-3  gpgme-2.2.0-1
+               gpm-1.20.7.r38.ge82d1a6-7  grep-3.12-2  gzip-1.15-1  hwdata-0.412-1  iana-etc-20260617-1  icu-78.3-1  iproute2-7.3.0-1  iptables-1:1.8.13-1
+               iputils-20250605-1  iw-6.17-1  jansson-2.15.1-1  json-c-0.19-1  kbd-2.10.0-1  keyutils-1.6.3-4  kmod-34.3-1  krb5-1.22.2-1
+               leancrypto-1.9.1-1  libarchive-3.8.11-1  libasan-16.2.1+r23+gd564253eb6c8-1  libassuan-3.0.0-1  libatomic-16.2.1+r23+gd564253eb6c8-1
+               libbpf-1.7.0-1  libcap-2.78-1  libcap-ng-0.9.6-1  libdaemon-0.14-6  libelf-0.197-1  libevent-2.1.13-2  libffi-3.8.0-1
+               libgcc-16.2.1+r23+gd564253eb6c8-1  libgcrypt-1.12.4-1  libgfortran-16.2.1+r23+gd564253eb6c8-1  libgomp-16.2.1+r23+gd564253eb6c8-1
+               libgpg-error-1.61-1  libhwasan-16.2.1+r23+gd564253eb6c8-1  libidn2-2.3.8-1  libksba-1.8.1-1  libldap-2.7.2-2
+               liblsan-16.2.1+r23+gd564253eb6c8-1  libmakepkg-dropins-20-2  libmm-glib-1.24.2-2  libmnl-1.0.5-2  libndp-1.9-1
+               libnetfilter_conntrack-1.1.1-1  libnewt-0.52.25-2  libnfnetlink-1.0.2-2  libnftnl-1.3.2-1  libnghttp2-1.71.0-1  libnghttp3-1.19.0-1
+               libngtcp2-1.26.0-1  libnl-3.12.0-1  libnm-1.58.1-3  libnsl-2.0.1-2  libobjc-16.2.1+r23+gd564253eb6c8-1  libp11-kit-0.26.5-1
+               libpcap-1.11.0-1  libpgm-5.3.128-4  libpsl-0.21.5-2  libquadmath-16.2.1+r23+gd564253eb6c8-1  libsasl-2.1.28-5  libseccomp-2.6.0-1
+               libsecret-0.21.8.2-1  libsodium-1.0.22-1  libssh2-1.11.1-7  libstdc++-16.2.1+r23+gd564253eb6c8-1  libsysprof-capture-51.0-1
+               libtasn1-4.21.0-1  libteam-1.32-3  libtirpc-1.3.8-1  libtsan-16.2.1+r23+gd564253eb6c8-1  libubsan-16.2.1+r23+gd564253eb6c8-1
+               libunistring-1.4.2-1  libusb-1.0.30-1  libverto-0.3.2-6  libxcrypt-4.5.2-1  libxml2-2.15.4-1  licenses-20240728-1  linux-api-headers-7.3-1
+               linux-firmware-whence-20261019-1  lmdb-0.9.35-1  lz4-1:1.11.0-1  mkinitcpio-busybox-1.36.1-1  mobile-broadband-provider-info-20251101-1
+               mpfr-4.2.2-1  ncurses-6.6-2  nettle-4.0-1  nftables-1:1.1.7-3  npth-1.8-1  nspr-4.40-1  nss-3.133-1  openssl-3.6.5-1  p11-kit-0.26.5-1
+               pacman-mirrorlist-20260610-1  pam-1.7.3-1  pambase-20260616-1  pciutils-3.15.0-1  pcre-8.45-5  pcre2-10.49-1  pcsclite-2.5.3-1
+               pinentry-1.3.3-1  polkit-128-1  popt-1.19-2  procps-ng-4.0.7-1  psmisc-23.7-2  readline-8.3.6-1  sed-4.10-2  shadow-4.20.0.arch1-1
+               slang-2.3.3-4  sqlite-3.54.1-1  systemd-262.1-1  systemd-libs-262.1-1  systemd-sysvcompat-262.1-1  tar-1.35-5  tpm2-tss-4.2.0-2
+               tzdata-2026f-1  util-linux-2.42.4-1  util-linux-libs-2.42.4-1  wpa_supplicant-2:2.12-1  xz-5.8.4-1  zeromq-4.3.5-3  zlib-1:1.3.2-4
+               zstd-1.5.7-3  amd-ucode-20261019-1  archez-installer-2026.10.31-50656  base-3-3  dosfstools-4.2-5  efibootmgr-18-4  grub-2:2.16-1
+               intel-ucode-20260925-1  linux-firmware-amd-20261019-1  linux-firmware-atheros-20261019-1  linux-firmware-broadcom-20261019-1
+               linux-firmware-intel-20261019-1  linux-firmware-mediatek-20261019-1  linux-firmware-realtek-20261019-1  linux-zen-7.2.14.zen1-1
+               mkinitcpio-42.2-1  mkinitcpio-archiso-73-1  networkmanager-1.58.1-3  pacman-7.1.0.r9.g54d9411-3  sudo-1.9.17.p2-6
+               wireless-regdb-2026.09.03-1
+
+Total Installed Size:  1086.61 MiB
+
+:: Proceed with installation? [Y/n] 
+:: Retrieving packages...
+ archez-installer-2026.10.31-50656-any                             27.8 KiB  50.6 KiB/s 00:01 [#######################################################] 100%
+(181/181) checking keys in keyring                                                            [#######################################################] 100%
+(181/181) checking package integrity                                                          [#######################################################] 100%
+(181/181) loading package files                                                               [#######################################################] 100%
+(181/181) checking for file conflicts                                                         [#######################################################] 100%
+:: Processing package changes...
+(  1/181) installing linux-api-headers                                                        [#######################################################] 100%
+(  2/181) installing tzdata                                                                   [#######################################################] 100%
+Optional dependencies for tzdata
+    bash: for tzselect [pending]
+    glibc: for zdump, zic [pending]
+(  3/181) installing iana-etc                                                                 [#######################################################] 100%
+(  4/181) installing filesystem                                                               [#######################################################] 100%
+warning: /tmp/archiso-tmp/work/x86_64/airootfs/etc/shadow installed as /tmp/archiso-tmp/work/x86_64/airootfs/etc/shadow.pacnew
+(  5/181) installing glibc                                                                    [#######################################################] 100%
+warning: /tmp/archiso-tmp/work/x86_64/airootfs/etc/locale.gen installed as /tmp/archiso-tmp/work/x86_64/airootfs/etc/locale.gen.pacnew
+Optional dependencies for glibc
+    gd: for memusagestat
+    perl: for mtrace
+(  6/181) installing libgcc                                                                   [#######################################################] 100%
+(  7/181) installing libstdc++                                                                [#######################################################] 100%
+(  8/181) installing ncurses                                                                  [#######################################################] 100%
+Optional dependencies for ncurses
+    bash: for ncursesw6-config [pending]
+(  9/181) installing readline                                                                 [#######################################################] 100%
+( 10/181) installing bash                                                                     [#######################################################] 100%
+Optional dependencies for bash
+    bash-completion: for tab completion
+( 11/181) installing acl                                                                      [#######################################################] 100%
+( 12/181) installing attr                                                                     [#######################################################] 100%
+( 13/181) installing gmp                                                                      [#######################################################] 100%
+( 14/181) installing zlib                                                                     [#######################################################] 100%
+( 15/181) installing sqlite                                                                   [#######################################################] 100%
+( 16/181) installing util-linux-libs                                                          [#######################################################] 100%
+Optional dependencies for util-linux-libs
+    python: python bindings to libmount
+( 17/181) installing e2fsprogs                                                                [#######################################################] 100%
+Optional dependencies for e2fsprogs
+    lvm2: for e2scrub
+    util-linux: for e2scrub [pending]
+    smtp-forwarder: for e2scrub_fail script
+( 18/181) installing keyutils                                                                 [#######################################################] 100%
+( 19/181) installing gdbm                                                                     [#######################################################] 100%
+( 20/181) installing brotli                                                                   [#######################################################] 100%
+( 21/181) installing xz                                                                       [#######################################################] 100%
+( 22/181) installing lz4                                                                      [#######################################################] 100%
+( 23/181) installing zstd                                                                     [#######################################################] 100%
+( 24/181) installing openssl                                                                  [#######################################################] 100%
+Optional dependencies for openssl
+    ca-certificates [pending]
+    perl
+( 25/181) installing libsasl                                                                  [#######################################################] 100%
+( 26/181) installing libldap                                                                  [#######################################################] 100%
+( 27/181) installing libevent                                                                 [#######################################################] 100%
+Optional dependencies for libevent
+    python: event_rpcgen.py
+( 28/181) installing libverto                                                                 [#######################################################] 100%
+( 29/181) installing lmdb                                                                     [#######################################################] 100%
+( 30/181) installing krb5                                                                     [#######################################################] 100%
+( 31/181) installing libcap-ng                                                                [#######################################################] 100%
+( 32/181) installing audit                                                                    [#######################################################] 100%
+Optional dependencies for audit
+    audispd-plugins: for audit event dispatcher plugins
+    audispd-plugins-zos: for z/OS audit event dispatcher plugin
+( 33/181) installing libxcrypt                                                                [#######################################################] 100%
+( 34/181) installing libtirpc                                                                 [#######################################################] 100%
+( 35/181) installing libnsl                                                                   [#######################################################] 100%
+( 36/181) installing pambase                                                                  [#######################################################] 100%
+( 37/181) installing libgpg-error                                                             [#######################################################] 100%
+( 38/181) installing libgcrypt                                                                [#######################################################] 100%
+( 39/181) installing systemd-libs                                                             [#######################################################] 100%
+( 40/181) installing pam                                                                      [#######################################################] 100%
+( 41/181) installing libcap                                                                   [#######################################################] 100%
+( 42/181) installing coreutils                                                                [#######################################################] 100%
+( 43/181) installing findutils                                                                [#######################################################] 100%
+( 44/181) installing libtasn1                                                                 [#######################################################] 100%
+( 45/181) installing libffi                                                                   [#######################################################] 100%
+( 46/181) installing libp11-kit                                                               [#######################################################] 100%
+( 47/181) installing p11-kit                                                                  [#######################################################] 100%
+( 48/181) installing ca-certificates-utils                                                    [#######################################################] 100%
+( 49/181) installing ca-certificates-mozilla                                                  [#######################################################] 100%
+( 50/181) installing ca-certificates                                                          [#######################################################] 100%
+( 51/181) installing libunistring                                                             [#######################################################] 100%
+( 52/181) installing libidn2                                                                  [#######################################################] 100%
+( 53/181) installing libnghttp2                                                               [#######################################################] 100%
+( 54/181) installing libnghttp3                                                               [#######################################################] 100%
+( 55/181) installing nettle                                                                   [#######################################################] 100%
+( 56/181) installing leancrypto                                                               [#######################################################] 100%
+( 57/181) installing gnutls                                                                   [#######################################################] 100%
+Optional dependencies for gnutls
+    tpm2-tss: support for TPM2 wrapped keys [pending]
+( 58/181) installing libngtcp2                                                                [#######################################################] 100%
+( 59/181) installing libpsl                                                                   [#######################################################] 100%
+( 60/181) installing libssh2                                                                  [#######################################################] 100%
+( 61/181) installing curl                                                                     [#######################################################] 100%
+( 62/181) installing mpfr                                                                     [#######################################################] 100%
+( 63/181) installing gawk                                                                     [#######################################################] 100%
+( 64/181) installing json-c                                                                   [#######################################################] 100%
+( 65/181) installing libgomp                                                                  [#######################################################] 100%
+( 66/181) installing gnulib-l10n                                                              [#######################################################] 100%
+( 67/181) installing icu                                                                      [#######################################################] 100%
+( 68/181) installing libxml2                                                                  [#######################################################] 100%
+Optional dependencies for libxml2
+    python: Python bindings
+( 69/181) installing gettext                                                                  [#######################################################] 100%
+Optional dependencies for gettext
+    git: for autopoint infrastructure updates
+    appstream: for appstream support
+( 70/181) installing libksba                                                                  [#######################################################] 100%
+( 71/181) installing libusb                                                                   [#######################################################] 100%
+( 72/181) installing libassuan                                                                [#######################################################] 100%
+( 73/181) installing libsysprof-capture                                                       [#######################################################] 100%
+( 74/181) installing bzip2                                                                    [#######################################################] 100%
+( 75/181) installing pcre2                                                                    [#######################################################] 100%
+Optional dependencies for pcre2
+    sh: for pcre2-config [installed]
+( 76/181) installing glib2                                                                    [#######################################################] 100%
+Optional dependencies for glib2
+    dconf: GSettings storage backend
+    glib2-devel: development tools
+    gvfs: most gio functionality
+( 77/181) installing tpm2-tss                                                                 [#######################################################] 100%
+( 78/181) installing libsecret                                                                [#######################################################] 100%
+Optional dependencies for libsecret
+    org.freedesktop.secrets: secret storage backend
+( 79/181) installing pinentry                                                                 [#######################################################] 100%
+Optional dependencies for pinentry
+    gcr: GNOME backend
+    gtk3: GTK backend
+    kguiaddons: Qt6 backend
+    kwindowsystem: Qt6 backend
+( 80/181) installing npth                                                                     [#######################################################] 100%
+( 81/181) installing gnupg                                                                    [#######################################################] 100%
+Optional dependencies for gnupg
+    pcsclite: for using scdaemon not with the gnupg internal card driver [pending]
+( 82/181) installing gpgme                                                                    [#######################################################] 100%
+( 83/181) installing grep                                                                     [#######################################################] 100%
+( 84/181) installing libarchive                                                               [#######################################################] 100%
+( 85/181) installing pacman-mirrorlist                                                        [#######################################################] 100%
+( 86/181) installing device-mapper                                                            [#######################################################] 100%
+( 87/181) installing popt                                                                     [#######################################################] 100%
+( 88/181) installing cryptsetup                                                               [#######################################################] 100%
+( 89/181) installing expat                                                                    [#######################################################] 100%
+( 90/181) installing dbus                                                                     [#######################################################] 100%
+( 91/181) installing dbus-broker                                                              [#######################################################] 100%
+( 92/181) installing dbus-broker-units                                                        [#######################################################] 100%
+( 93/181) installing dbus-units                                                               [#######################################################] 100%
+( 94/181) installing sed                                                                      [#######################################################] 100%
+( 95/181) installing gzip                                                                     [#######################################################] 100%
+Optional dependencies for gzip
+    diffutils: zdiff/zcmp support [pending]
+    grep: zegrep/zfgrep/zforce/zgrep support [installed]
+    less: zless support
+    util-linux: zmore support [pending]
+( 96/181) installing kbd                                                                      [#######################################################] 100%
+( 97/181) installing kmod                                                                     [#######################################################] 100%
+( 98/181) installing hwdata                                                                   [#######################################################] 100%
+( 99/181) installing libelf                                                                   [#######################################################] 100%
+(100/181) installing libseccomp                                                               [#######################################################] 100%
+(101/181) installing file                                                                     [#######################################################] 100%
+(102/181) installing shadow                                                                   [#######################################################] 100%
+(103/181) installing util-linux                                                               [#######################################################] 100%
+Optional dependencies for util-linux
+    words: default dictionary for look
+(104/181) installing systemd                                                                  [#######################################################] 100%
+Initializing machine ID from random generator.
+Creating group 'sys' with GID 3.
+Creating group 'mem' with GID 8.
+Creating group 'ftp' with GID 11.
+Creating group 'mail' with GID 12.
+Creating group 'log' with GID 19.
+Creating group 'smmsp' with GID 25.
+Creating group 'proc' with GID 26.
+Creating group 'games' with GID 50.
+Creating group 'lock' with GID 54.
+Creating group 'network' with GID 90.
+Creating group 'floppy' with GID 94.
+Creating group 'scanner' with GID 96.
+Creating group 'power' with GID 98.
+Creating group 'nobody' with GID 65534.
+Creating group 'adm' with GID 999.
+Creating group 'wheel' with GID 998.
+Creating group 'empower' with GID 997.
+Creating group 'utmp' with GID 996.
+Creating group 'audio' with GID 995.
+Creating group 'clock' with GID 994.
+Creating group 'disk' with GID 993.
+Creating group 'input' with GID 992.
+Creating group 'kmem' with GID 991.
+Creating group 'kvm' with GID 990.
+Creating group 'lp' with GID 989.
+Creating group 'optical' with GID 988.
+Creating group 'render' with GID 987.
+Creating group 'sgx' with GID 986.
+Creating group 'storage' with GID 985.
+Creating group 'tty' with GID 5.
+Creating group 'uucp' with GID 984.
+Creating group 'video' with GID 983.
+Creating group 'users' with GID 982.
+Creating group 'systemd-journal' with GID 981.
+Creating group 'rfkill' with GID 980.
+Creating group 'bin' with GID 1.
+Creating user 'bin' (n/a) with UID 1 and GID 1.
+Creating group 'daemon' with GID 2.
+Creating user 'daemon' (n/a) with UID 2 and GID 2.
+Creating user 'mail' (n/a) with UID 8 and GID 12.
+Creating user 'ftp' (n/a) with UID 14 and GID 11.
+Creating group 'http' with GID 33.
+Creating user 'http' (n/a) with UID 33 and GID 33.
+Creating user 'nobody' (Kernel Overflow User) with UID 65534 and GID 65534.
+Creating group 'dbus' with GID 81.
+Creating user 'dbus' (System Message Bus) with UID 81 and GID 81.
+Creating group 'systemd-coredump' with GID 979.
+Creating user 'systemd-coredump' (systemd Core Dumper) with UID 979 and GID 979.
+Creating group 'systemd-imds' with GID 978.
+Creating user 'systemd-imds' (systemd Instance Metadata) with UID 978 and GID 978.
+Creating group 'systemd-network' with GID 977.
+Creating user 'systemd-network' (systemd Network Management) with UID 977 and GID 977.
+Creating group 'systemd-oom' with GID 976.
+Creating user 'systemd-oom' (systemd Userspace OOM Killer) with UID 976 and GID 976.
+Creating group 'systemd-journal-remote' with GID 975.
+Creating user 'systemd-journal-remote' (systemd Journal Remote) with UID 975 and GID 975.
+Creating group 'systemd-resolve' with GID 974.
+Creating user 'systemd-resolve' (systemd Resolver) with UID 974 and GID 974.
+Creating group 'systemd-timesync' with GID 973.
+Creating user 'systemd-timesync' (systemd Time Synchronization) with UID 973 and GID 973.
+Creating group 'tss' with GID 972.
+Creating user 'tss' (tss user for tpm2) with UID 972 and GID 972.
+Creating group 'uuidd' with GID 971.
+Creating user 'uuidd' (UUID generator helper daemon) with UID 971 and GID 971.
+Created symlink '/etc/systemd/system/autovt@.service' → '/usr/lib/systemd/system/getty@.service'.
+Created symlink '/etc/systemd/system/getty.target.wants/getty@tty1.service' → '/usr/lib/systemd/system/getty@.service'.
+Created symlink '/etc/systemd/system/multi-user.target.wants/remote-fs.target' → '/usr/lib/systemd/system/remote-fs.target'.
+Created symlink '/etc/systemd/system/sockets.target.wants/systemd-userdbd.socket' → '/usr/lib/systemd/system/systemd-userdbd.socket'.
+Optional dependencies for systemd
+    apparmor: additional security features
+    curl: systemd-journal-upload, machinectl pull-tar and pull-raw [installed]
+    gnutls: systemd-journal-gatewayd and systemd-journal-remote [installed]
+    iptables: firewall features [pending]
+    libarchive: convert DDIs to tarballs [installed]
+    libbpf: support BPF programs [pending]
+    libfido2: unlocking LUKS2 volumes with FIDO2 token
+    libmicrohttpd: systemd-journal-gatewayd and systemd-journal-remote
+    libp11-kit: support PKCS#11 [installed]
+    libpwquality: check password quality
+    polkit: allow administration as unprivileged user [pending]
+    qemu-base: systemd-vmspawn
+    qrencode: show QR codes
+    quota-tools: kernel-level quota management
+    systemd-sysvcompat: symlink package to provide sysvinit binaries [pending]
+    systemd-ukify: combine kernel and initrd into a signed Unified Kernel Image
+    tpm2-tss: unlocking LUKS2 volumes with TPM2 [installed]
+(105/181) installing jansson                                                                  [#######################################################] 100%
+(106/181) installing binutils                                                                 [#######################################################] 100%
+Optional dependencies for binutils
+    debuginfod: for debuginfod server/client functionality
+    perl: for gprofng-display-html
+(107/181) installing libmakepkg-dropins                                                       [#######################################################] 100%
+(108/181) installing pacman                                                                   [#######################################################] 100%
+warning: /tmp/archiso-tmp/work/x86_64/airootfs/etc/pacman.conf installed as /tmp/archiso-tmp/work/x86_64/airootfs/etc/pacman.conf.pacnew
+Optional dependencies for pacman
+    base-devel: required to use makepkg
+    perl-locale-gettext: translation support in makepkg-template
+(109/181) installing mkinitcpio-busybox                                                       [#######################################################] 100%
+(110/181) installing diffutils                                                                [#######################################################] 100%
+(111/181) installing mkinitcpio                                                               [#######################################################] 100%
+Optional dependencies for mkinitcpio
+    xz: Use lzma or xz compression for the initramfs image [installed]
+    bzip2: Use bzip2 compression for the initramfs image [installed]
+    lzop: Use lzo compression for the initramfs image
+    lz4: Use lz4 compression for the initramfs image [installed]
+    mkinitcpio-nfs-utils: Support for root filesystem on NFS
+    systemd-ukify: alternative UKI generator
+(112/181) installing linux-zen                                                                [#######################################################] 100%
+Optional dependencies for linux-zen
+    linux-zen-headers: headers and scripts for building modules
+    linux-firmware: firmware images needed for some devices
+    scx-scheds: to use sched-ext schedulers
+    wireless-regdb: to set the correct wireless channels of your country [pending]
+(113/181) installing linux-firmware-whence                                                    [#######################################################] 100%
+(114/181) installing linux-firmware-amd                                                       [#######################################################] 100%
+(115/181) installing linux-firmware-atheros                                                   [#######################################################] 100%
+(116/181) installing linux-firmware-broadcom                                                  [#######################################################] 100%
+(117/181) installing linux-firmware-intel                                                     [#######################################################] 100%
+(118/181) installing linux-firmware-mediatek                                                  [#######################################################] 100%
+(119/181) installing linux-firmware-realtek                                                   [#######################################################] 100%
+(120/181) installing amd-ucode                                                                [#######################################################] 100%
+(121/181) installing intel-ucode                                                              [#######################################################] 100%
+(122/181) installing libmnl                                                                   [#######################################################] 100%
+(123/181) installing libnfnetlink                                                             [#######################################################] 100%
+(124/181) installing libnetfilter_conntrack                                                   [#######################################################] 100%
+(125/181) installing libnftnl                                                                 [#######################################################] 100%
+(126/181) installing libasan                                                                  [#######################################################] 100%
+(127/181) installing libatomic                                                                [#######################################################] 100%
+(128/181) installing libgfortran                                                              [#######################################################] 100%
+(129/181) installing libhwasan                                                                [#######################################################] 100%
+(130/181) installing liblsan                                                                  [#######################################################] 100%
+(131/181) installing libobjc                                                                  [#######################################################] 100%
+(132/181) installing libquadmath                                                              [#######################################################] 100%
+(133/181) installing libtsan                                                                  [#######################################################] 100%
+(134/181) installing libubsan                                                                 [#######################################################] 100%
+(135/181) installing gcc-libs                                                                 [#######################################################] 100%
+(136/181) installing libnl                                                                    [#######################################################] 100%
+(137/181) installing libpcap                                                                  [#######################################################] 100%
+(138/181) installing nftables                                                                 [#######################################################] 100%
+Optional dependencies for nftables
+    python: Python bindings
+    python-jsonschema: Python bindings
+(139/181) installing iptables                                                                 [#######################################################] 100%
+(140/181) installing libbpf                                                                   [#######################################################] 100%
+(141/181) installing iproute2                                                                 [#######################################################] 100%
+Optional dependencies for iproute2
+    db: userspace arp daemon
+    linux-atm: ATM support
+    python: for routel
+(142/181) installing libmm-glib                                                               [#######################################################] 100%
+(143/181) installing libndp                                                                   [#######################################################] 100%
+(144/181) installing procps-ng                                                                [#######################################################] 100%
+(145/181) installing gpm                                                                      [#######################################################] 100%
+(146/181) installing pcre                                                                     [#######################################################] 100%
+(147/181) installing slang                                                                    [#######################################################] 100%
+(148/181) installing libnewt                                                                  [#######################################################] 100%
+Optional dependencies for libnewt
+    python: libnewt support with the _snack module
+    tcl: whiptcl support
+(149/181) installing nspr                                                                     [#######################################################] 100%
+(150/181) installing nss                                                                      [#######################################################] 100%
+(151/181) installing libnm                                                                    [#######################################################] 100%
+(152/181) installing libdaemon                                                                [#######################################################] 100%
+(153/181) installing libsodium                                                                [#######################################################] 100%
+(154/181) installing libpgm                                                                   [#######################################################] 100%
+(155/181) installing zeromq                                                                   [#######################################################] 100%
+Optional dependencies for zeromq
+    cppzmq: C++ binding for libzmq
+(156/181) installing libteam                                                                  [#######################################################] 100%
+(157/181) installing mobile-broadband-provider-info                                           [#######################################################] 100%
+(158/181) installing duktape                                                                  [#######################################################] 100%
+(159/181) installing polkit                                                                   [#######################################################] 100%
+(160/181) installing pcsclite                                                                 [#######################################################] 100%
+Optional dependencies for pcsclite
+    python: API call trace logging with the pcsc-spy
+    ccid: USB Chip/Smart Card Interface Devices driver
+(161/181) installing wpa_supplicant                                                           [#######################################################] 100%
+(162/181) installing networkmanager                                                           [#######################################################] 100%
+Optional dependencies for networkmanager
+    bluez: Bluetooth support
+    dhcpcd: alternative DHCP client
+    dnsmasq: connection sharing
+    firewalld: firewall support
+    iptables: connection sharing [installed]
+    iwd: wpa_supplicant alternative
+    libnvme: NBFT support
+    modemmanager: cellular network support
+    nftables: connection sharing [installed]
+    openresolv: alternative resolv.conf manager
+    pacrunner: PAC proxy support
+    polkit: let non-root users control networking [installed]
+    ppp: dialup connection support
+(163/181) installing iw                                                                       [#######################################################] 100%
+(164/181) installing wireless-regdb                                                           [#######################################################] 100%
+(165/181) installing tar                                                                      [#######################################################] 100%
+(166/181) installing pciutils                                                                 [#######################################################] 100%
+Optional dependencies for pciutils
+    which: for update-pciids
+    grep: for update-pciids [installed]
+    curl: for update-pciids [installed]
+(167/181) installing psmisc                                                                   [#######################################################] 100%
+(168/181) installing licenses                                                                 [#######################################################] 100%
+(169/181) installing archlinux-keyring                                                        [#######################################################] 100%
+(170/181) installing systemd-sysvcompat                                                       [#######################################################] 100%
+(171/181) installing iputils                                                                  [#######################################################] 100%
+(172/181) installing base                                                                     [#######################################################] 100%
+Optional dependencies for base
+    linux: bare metal support
+(173/181) installing dosfstools                                                               [#######################################################] 100%
+(174/181) installing efivar                                                                   [#######################################################] 100%
+(175/181) installing efibootmgr                                                               [#######################################################] 100%
+(176/181) installing grub                                                                     [#######################################################] 100%
+:: Install your bootloader and generate configuration with:
+     # grub-install ...
+     # grub-mkconfig -o /boot/grub/grub.cfg
+Optional dependencies for grub
+    dosfstools: For grub-mkrescue FAT FS and EFI support [installed]
+    efibootmgr: For grub-install EFI support [installed]
+    freetype2: For grub-mkfont usage
+    fuse3: For grub-mount usage
+    libisoburn: Provides xorriso for generating grub rescue iso using grub-mkrescue
+    libusb: For grub-emu USB support [installed]
+    lzop: For grub-mkrescue LZO support
+    mtools: For grub-mkrescue FAT FS support
+    os-prober: To detect other OSes when generating grub.cfg in BIOS systems
+    sdl: For grub-emu SDL support
+(177/181) installing mkinitcpio-archiso                                                       [#######################################################] 100%
+Optional dependencies for mkinitcpio-archiso
+    curl: for PXE over HTTP [installed]
+    gnupg: for PGP signature verification of rootfs over PXE [installed]
+    mkinitcpio-nfs-utils: for PXE over NFS
+    nbd: for PXE over NBD
+    openssl: for CMS signature verification of rootfs over PXE [installed]
+    pv: for status display during copy to RAM
+(178/181) installing arch-install-scripts                                                     [#######################################################] 100%
+(179/181) installing dialog                                                                   [#######################################################] 100%
+(180/181) installing sudo                                                                     [#######################################################] 100%
+warning: directory permissions differ on /tmp/archiso-tmp/work/x86_64/airootfs/etc/sudoers.d/
+filesystem: 755  package: 750
+(181/181) installing archez-installer                                                         [#######################################################] 100%
+Optional dependencies for archez-installer
+    kdialog: QT GUI support
+    yad: GTK GUI support
+    zenity: GTK GUI support
+:: Running post-transaction hooks...
+( 1/17) Generating the configured locale...
+Generating locales...
+  en_GB.UTF-8... done
+  en_US.UTF-8... done
+Generation complete.
+( 2/17) Configuring dynamic linker run-time bindings...
+( 3/17) Creating iconv module configuration cache...
+( 4/17) Creating system user accounts...
+Creating group 'polkitd' with GID 102.
+Creating group 'alpm' with GID 970.
+Creating user 'alpm' (Arch Linux Package Management) with UID 970 and GID 970.
+Creating group 'pcscd' with GID 969.
+Creating user 'pcscd' (PC/SC Smart Card Daemon) with UID 969 and GID 969.
+Creating user 'polkitd' (User for polkitd) with UID 102 and GID 102.
+( 5/17) Creating temporary files...
+( 6/17) Updating journal message catalog...
+( 7/17) Updating udev hardware database...
+( 8/17) Applying kernel sysctl settings...
+  Skipped: Running in chroot.
+( 9/17) Reloading system manager configuration...
+  Skipped: Running in chroot.
+(10/17) Reloading user manager configuration...
+  Skipped: Running in chroot.
+(11/17) Reloading device manager configuration...
+  Skipped: Running in chroot.
+(12/17) Arming ConditionNeedsUpdate...
+(13/17) Rebuilding certificate stores...
+(14/17) Updating module dependencies...
+(15/17) Updating linux initcpios...
+==> Building image from preset: /etc/mkinitcpio.d/linux-zen.preset: 'default'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux-zen -g /boot/initramfs-linux-zen.img
+==> Using drop-in configuration file: 'archiso.conf'
+==> Starting build: '7.2.14-zen1-1-zen'
+  -> Running build hook: [base]
+  -> Running build hook: [udev]
+  -> Running build hook: [modconf]
+  -> Running build hook: [archiso]
+==> WARNING: pv not found; falling back to cp for copy to RAM
+  -> Running build hook: [block]
+==> WARNING: Possibly missing firmware for module: 'wd719x'
+==> WARNING: Possibly missing firmware for module: 'qla2xxx'
+==> WARNING: Possibly missing firmware for module: 'qla1280'
+==> WARNING: Possibly missing firmware for module: 'qed'
+==> WARNING: Possibly missing firmware for module: 'cxgb4'
+==> WARNING: Possibly missing firmware for module: 'cxgb3'
+==> WARNING: Possibly missing firmware for module: 'csiostor'
+==> WARNING: Possibly missing firmware for module: 'bfa'
+==> WARNING: Possibly missing firmware for module: 'aic94xx'
+==> WARNING: Possibly missing firmware for module: 'advansys'
+==> WARNING: Possibly missing firmware for module: 'xhci_pci_renesas'
+==> WARNING: Possibly missing firmware for module: 'ums_eneub6250'
+==> WARNING: Possibly missing firmware for module: 'cs42l43'
+  -> Running build hook: [filesystems]
+==> Generating module dependencies
+==> Decompressing zstd-compressed firmware files
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux-zen.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+(16/17) Reloading system bus configuration...
+  Skipped: Running in chroot.
+(17/17) Finish setting up ArchISO environment...
+passwd: password changed.
+Adding user live to group wheel
+Adding user live to group autologin
+passwd: password changed.
+Created symlink '/etc/systemd/system/multi-user.target.wants/NetworkManager.service' → '/usr/lib/systemd/system/NetworkManager.service'.
+Created symlink '/etc/systemd/system/dbus-org.freedesktop.nm-dispatcher.service' → '/usr/lib/systemd/system/NetworkManager-dispatcher.service'.
+Created symlink '/etc/systemd/system/network-online.target.wants/NetworkManager-wait-online.service' → '/usr/lib/systemd/system/NetworkManager-wait-online.service'.
+Created symlink '/etc/systemd/system/dbus-org.freedesktop.timesync1.service' → '/usr/lib/systemd/system/systemd-timesyncd.service'.
+Created symlink '/etc/systemd/system/sysinit.target.wants/systemd-timesyncd.service' → '/usr/lib/systemd/system/systemd-timesyncd.service'.
+[mkarchiso-improved] INFO: Done! Packages installed successfully.
+[mkarchiso-improved] INFO: Creating version files...
+[mkarchiso-improved] INFO: Done!
+[mkarchiso-improved] INFO: Copying /boot out of the airootfs...
+[mkarchiso-improved] INFO: Done!
+[mkarchiso-improved] INFO: Creating a list of installed packages on live-environment...
+[mkarchiso-improved] INFO: Done!
+[mkarchiso-improved] INFO: Preparing kernel and initramfs for the ISO 9660 file system...
+[mkarchiso-improved] INFO: Done!
+[mkarchiso-improved] INFO: Setting up GRUB for BIOS booting...
+[mkarchiso-improved] INFO: Done! GRUB set up for BIOS booting successfully.
+[mkarchiso-improved] INFO: Setting up GRUB for UEFI booting...
+grub-mkstandalone: warning: Global SBAT level 4 in `/usr/share/grub/sbat.csv' does not match the build-time Global SBAT level 6.
+[mkarchiso-improved] INFO: Setting up GRUB for mixed mode booting...
+grub-mkstandalone: warning: Global SBAT level 4 in `/usr/share/grub/sbat.csv' does not match the build-time Global SBAT level 6.
+[mkarchiso-improved] INFO: Creating FAT image of size: 23 MiB...
+mkfs.fat 4.2 (2021-01-31)
+[mkarchiso-improved] INFO: Done! GRUB set up for UEFI booting successfully.
+[mkarchiso-improved] INFO: Cleaning up in pacstrap location...
+[mkarchiso-improved] INFO: Done!
+[mkarchiso-improved] INFO: Creating SquashFS image, this may take some time...
+Parallel mksquashfs: Using 8 processors
+Creating 4.0 filesystem on /tmp/archiso-tmp/work/iso/arch/x86_64/airootfs.sfs, block size 1048576.
+[======================================================================================================================================/ ] 35111/35156  99%
+Unrecognised xattr prefix system.posix_acl_default
+Unrecognised xattr prefix system.posix_acl_access
+Unrecognised xattr prefix system.posix_acl_default
+[=======================================================================================================================================-] 35156/35156 100%
+
+Exportable Squashfs 4.0 filesystem, zstd compressed, data block size 1048576
+        compressed data, compressed metadata, compressed fragments,
+        compressed xattrs, compressed ids
+        duplicates are removed
+Filesystem size 652074.39 Kbytes (636.79 Mbytes)
+        56.95% of uncompressed filesystem size (1145071.77 Kbytes)
+Inode table size 352438 bytes (344.18 Kbytes)
+        21.87% of uncompressed inode table size (1611363 bytes)
+Directory table size 451122 bytes (440.55 Kbytes)
+        37.73% of uncompressed directory table size (1195647 bytes)
+Xattr table size 47 bytes (0.05 Kbytes)
+        58.75% of uncompressed xattr table size (80 bytes)
+Number of duplicate files found 1357
+Number of inodes 44838
+Number of files 33075
+Number of fragments 818
+Number of symbolic links 8836
+Number of device nodes 0
+Number of fifo nodes 0
+Number of socket nodes 0
+Number of directories 2927
+Number of hard-links 1826
+Number of ids (unique uids + gids) 11
+Number of uids 5
+        root (0)
+        am (1000)
+        colord (971)
+        systemd-journal-remote (977)
+        avahi (972)
+Number of gids 11
+        root (0)
+        polkitd (102)
+        am (1000)
+        ftp (11)
+        tty (5)
+        dbus (81)
+        games (50)
+        colord (971)
+        systemd-journal-remote (977)
+        avahi (972)
+        rfkill (981)
+[mkarchiso-improved] INFO: Creating checksum file for self-test...
+[mkarchiso-improved] INFO: Done!
+[mkarchiso-improved] INFO: Creating ISO image...
+xorriso 1.5.8.pl02 : RockRidge filesystem manipulator, libburnia project.
+
+xorriso : NOTE : Environment variable SOURCE_DATE_EPOCH encountered with value 1793982537
+Drive current: -outdev 'stdio:/home/am/Projects/archez-linux-archiso/out/archlinux-min-2026.11.06-x86_64.iso'
+Media current: stdio file, overwriteable
+Media status : is blank
+Media summary: 0 sessions, 0 data blocks, 0 data, 54.1g free
+Added to ISO image: directory '/'='/tmp/archiso-tmp/work/iso'
+xorriso : UPDATE :      23 files added in 1 seconds
+xorriso : UPDATE :      23 files added in 1 seconds
+xorriso : NOTE : Copying to System Area: 512 bytes from file '/usr/lib/grub/i386-pc/boot_hybrid.img'
+xorriso : UPDATE :  18.71% done
+ISO image produced: 371663 sectors
+Written to medium : 371663 sectors at LBA 0
+Writing to 'stdio:/home/am/Projects/archez-linux-archiso/out/archlinux-min-2026.11.06-x86_64.iso' completed successfully.
+
+[mkarchiso-improved] INFO: Done!
+726M    /home/am/Projects/archez-linux-archiso/out/archlinux-min-2026.11.06-x86_64.iso
+ISO BUILT: Fri  6 Nov 16:32:35 GMT 2026
+Writing remaining data to disk...
+Finished writing remaining data.

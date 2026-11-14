@@ -2,15 +2,16 @@
 ## Keep pacman first, as other package install scripts rely on it.
 pacman
 
-## Linux kernel (required) and headers (optional)
-linux
-#linux-headers
-
+## Linux kernel (required)
+linux-zen
 
 ######## [ FIRMWARE AND DRIVERS ] ########
-## Linux firmware - minimal configuration for most hardware (recommended - around 147MB)
+## Linux firmware - minimal configuration for most hardware
 linux-firmware-amd
+linux-firmware-atheros
+linux-firmware-broadcom
 linux-firmware-intel
+linux-firmware-mediatek
 linux-firmware-realtek
 
 ## CPU microcode (recommended - around 32MB)
@@ -18,22 +19,36 @@ amd-ucode
 intel-ucode
 
 ######## [ NETWORKING ] ########
+## Network manager (recommended)
 networkmanager
+
+## Wireless regulatory database (recommended)
+wireless-regdb
 
 ######## [ CORE PACKAGES ] ########
 ## Arch Linux base (required)
 base
+
+## Bootloader
+efibootmgr
+grub
+grub-auto-installer
+os-prober
 
 ######## [ ARCHISO PACKAGES ] ########
 ## Mkinitcpio initramfs generator (required for ArchISO)
 mkinitcpio
 mkinitcpio-archiso
 
-## Syslinux BIOS bootloader (required for ArchISO)
-syslinux
+## Show progress during copy to RAM (optional)
+pv
 
 ## Install scripts
 archez-installer
 
 ######## [ UTILITY PACKAGES ] ########
+## Text editor
 nano
+
+## Administration
+sudo

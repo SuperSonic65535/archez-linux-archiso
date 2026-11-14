@@ -8,8 +8,8 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 ARCHISO_PROFILE="$1"
 [ -z "$ARCHISO_PROFILE" ] && echo "[ERROR] Please specify archiso preset to use" && exit 1
 [ ! -d "$SCRIPT_DIR/$ARCHISO_PROFILE" ] && echo "[ERROR] ArchISO preset \"$ARCHISO_PROFILE\" not found in $SCRIPT_DIR" && exit
-MEM_MB_SIZE=$(free -m | grep "Mem:" | xargs | cut -d ' ' -f 2)
-if [ $MEM_MB_SIZE -ge 20480 ]; then
+FREEMEM_MB=$(free -m | grep "Mem:" | xargs | cut -d ' ' -f 7)
+if [ $FREEMEM_MB -ge 8192 ]; then
         ARCHISO_WORK_DIR="/tmp/archiso-tmp/work"
 else ARCHISO_WORK_DIR="$SCRIPT_DIR/work"; fi
 
@@ -58,7 +58,7 @@ mkdir -p /tmp/archiso-tmp/"$ARCHISO_PROFILE"
 ResolveDepends "$SCRIPT_DIR/$ARCHISO_PROFILE"
 
 echo "BUILD ISO: $(date)"
-sudo mkarchiso -v -w "$ARCHISO_WORK_DIR" "/tmp/archiso-tmp/$ARCHISO_PROFILE" || exit 1
+sudo "$SCRIPT_DIR/mkarchiso-improved" -v -w "$ARCHISO_WORK_DIR" "/tmp/archiso-tmp/$ARCHISO_PROFILE" || exit 1
 
 sudo chown -R $(whoami):$(whoami) out; cd out; mkdir -p "$ISO_OUT_DIR"
 
@@ -74,7 +74,9 @@ case $DELETE_OLD in
 esac
 
 cd "$SCRIPT_DIR/out"; mv *.iso "$ISO_OUT_DIR"
-cd "$SCRIPT_DIR"; rmdir out; sudo rm -rf "$ARCHISO_WORK_DIR"
+cd "$SCRIPT_DIR"
+rmdir out
+#sudo rm -rf "$ARCHISO_WORK_DIR"
 
 echo "ISO BUILT: $(date)"; echo "Writing remaining data to disk..."; sync;
 echo "Finished writing remaining data."

@@ -1,0 +1,9 @@
+#### [ BASIC COMMANDS ] ####
+Connect to internet: nmtui
+
+#### [ ADVANCED TOOLS ] ####
+Run as administrator: sudo <COMMAND>
+List disk partitions: lsblk
+Disk partition tool: cfdisk
+
+If you can read this line, the build script is working properly.

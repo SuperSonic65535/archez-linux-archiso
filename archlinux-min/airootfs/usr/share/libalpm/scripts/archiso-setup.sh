@@ -31,9 +31,32 @@ sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
 ## Back up microcode
 #cp /boot/amd-ucode.img /; cp /boot/intel-ucode.img /
 
+## Delete non-essential system files to save space on CD
+rm -rf /usr/share/doc/* /usr/share/gtk-doc/ /usr/share/info/* /usr/share/man/*
+rm -rf /usr/share/licenses/*
+
+## Delete non-essential firmware/drivers to save space on CD
+rm -rf /usr/lib/firmware/i915
+
+## Remove all unused locales to save space on CD
+declare -A ok; for loc in $(locale -a | grep -Ev '^(C|POSIX)'); do
+	clean="${loc%%.*}"; ok["$clean"]=1
+	[[ "$clean" == *_* ]] && ok["${clean%%_*}"]=1
+done; for dir in /usr/share/locale/*; do
+	[[ -d "$dir" && ! -L "$dir" ]] || continue
+	name=$(basename "$dir")
+	if [[ -z "${ok[$name]}" ]]; then echo "Removed $dir"; rm -rf "$dir"; fi
+done; for file in /usr/share/i18n/locales/*; do
+	[[ -f "$file" && ! -L "$file" ]] || continue
+	name=$(basename "$file")
+	if [[ -z "${ok[$name]}" ]] && [ "$name" != "C" ] && [ "$name" != "POSIX" ]
+	then echo "Removed $file"; rm -rf "$file"; fi
+done
+
+
 ## Cleanup files and fix permissions
 #chmod 750 /etc/polkit-1/rules.d
 #chmod 750 /usr/share/polkit-1/rules.d
-rm /etc/*.pacnew /etc/*/*.pacnew
+rm -f /etc/*.pacnew /etc/*/*.pacnew
 rm -f /usr/share/libalpm/hooks/zzzz-archiso-setup.hook
 rm -f /usr/share/libalpm/scripts/archiso-setup.sh

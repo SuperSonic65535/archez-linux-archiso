@@ -1,6 +1,5 @@
 #### [ BASIC COMMANDS ] ####
 Connect to internet: nmtui
-Edit text file: nano <FILE>
 
 #### [ ADVANCED TOOLS ] ####
 Run as administrator: sudo <COMMAND>
