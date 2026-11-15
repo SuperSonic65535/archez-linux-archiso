@@ -1,3 +1,12 @@
+#!/bin/bash
+## DISCLAIMER: AI enhanced version (Google Gemini 3.5 Flash-Lite)
+## This is an AI enhanced version of the mkarchiso build script,
+## from archiso version 91-1 from September 27th 2026: https://archlinux.org/packages/extra/any/archiso/
+## This new AI enhanced version has been tested to ensure correct funtionality.
+## What's new:
+## - Added 'bios.grub' bootmode support in profiledef.sh
+## - Fixed various bugs
+
 #!/usr/bin/env bash
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
